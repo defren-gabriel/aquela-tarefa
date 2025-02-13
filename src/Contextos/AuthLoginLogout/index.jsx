@@ -123,7 +123,6 @@ export const AuthProvider = ({ children }) => {
   const deletaTarefa = async (id) => {
     try {
       await deleteDoc(doc(db, "tarefas", id));
-      console.log("Tarefa deletada com sucesso!");
     } catch (error) {
       console.error("Erro ao deletar tarefa:", error);
     }

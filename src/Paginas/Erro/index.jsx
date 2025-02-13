@@ -10,9 +10,9 @@ const Erro = () => {
     }, []);
 
     return(
-        <>
+        <section className={styles.section}>
             <h1 className={styles.titulo1}>A pagina requisitada não existe, redirecionando para o início...</h1>
-        </>
+        </section>
     );
 }
 

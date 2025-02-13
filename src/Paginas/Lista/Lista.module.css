@@ -6,6 +6,11 @@
 .titulo {
     color: #3E362E;
     font-size: 2em;
+
+    font-family: "Oswald", serif; 
+    font-optical-sizing: auto; 
+    font-weight: 600; 
+    font-style: normal; 
 }
 
 .li {
@@ -20,6 +25,10 @@
     border-radius: 10px;
     color: #3E362E;
     font-size: 1.2em;
+
+    font-family: "Quattrocento", serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .lib {
@@ -28,6 +37,10 @@
     color: #865D36;
     border: 2px solid #865D36;
     border-radius: 5px;
+
+    font-family: "Quattrocento", serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .lib:hover {
@@ -44,6 +57,10 @@
     border-radius: 5px;
     font-size: 3em;
     margin-left: 50px;
+
+    font-family: "Quattrocento", serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .novoregistro {
@@ -61,6 +78,10 @@
 
 .novoregistrofi {
     flex-grow: 1;
+
+    font-family: "Quattrocento", serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .nrformsub {
@@ -72,10 +93,18 @@
     border: 2px solid #865D36;
     border-radius: 5px;
     text-align: center;
+
+    font-family: "Quattrocento", serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .label {
     color: #3E362E;
+
+    font-family: "Quattrocento", serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 /*configuração para dispositivos moveis*/

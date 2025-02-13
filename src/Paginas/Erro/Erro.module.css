@@ -1,3 +1,13 @@
+.section {
+    max-width: 750px;
+    margin: auto;
+}
+
 .titulo1 {
     color: #3E362E;
+
+    font-family: "Oswald", serif; 
+    font-optical-sizing: auto; 
+    font-weight: 600; 
+    font-style: normal;
 }
