@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../Contextos/AuthLoginLogout";
 
 //importe o estilo local
-import "./index.css";
+import styles from "./Lista.module.css";
 
 const Lista = () => {
     //coordenada o usuario e funcoes da tela
@@ -45,33 +45,33 @@ const Lista = () => {
     }, []);
 
     return(
-        <section>
+        <section className={styles.section}>
         {
             loadingLista ? ( 
-                <h1 className="titulo">Carregando sua lista...</h1> 
+                <h1 className={styles.titulo}>Carregando sua lista...</h1> 
             ) : lista.length ? ( 
                 <>
-                    <h1 className="titulo">Lista de tarefas:</h1>
+                    <h1 className={styles.titulo}>Lista de tarefas:</h1>
                     <ul>
                         {
                             lista.map((item) => (
-                                <li key={item.id}>-{item.nome}<button onClick={() => deletaTarefa(item.id)}>X</button></li>
+                                <li className={styles.li} key={item.id}>-{item.nome}<button className={styles.lib} onClick={() => deletaTarefa(item.id)}>X</button></li>
                             ))
                         }
                     </ul>
                 </>
             ) : ( 
-                <h1 className="titulo">Sua lista de tarefas está vazia</h1> 
+                <h1 className={styles.titulo}>Sua lista de tarefas está vazia</h1> 
             )
         }
-        <button className="registrar" onClick={handleAcaoChange}>+</button>
+        <button className={styles.registrar} onClick={handleAcaoChange}>+</button>
         {
             acao &&
-            <div className="novoregistro">
-                <form onSubmit={handleSubmit}>
-                    <label htmlFor="tarefa">Tarefa</label>
-                    <input type="text" name="tarefa" id="tarefa" value={tarefa} onChange={handleTarefaChange} ref={inputTarefaRef} />
-                    <input type="submit" value="Registrar" className="nrformsub" />
+            <div className={styles.novoregistro}>
+                <form className={styles.novoregistrof} onSubmit={handleSubmit}>
+                    <label className={styles.label} htmlFor="tarefa">Tarefa</label>
+                    <input className={styles.novoregistrofi} type="text" name="tarefa" id="tarefa" value={tarefa} onChange={handleTarefaChange} ref={inputTarefaRef} />
+                    <input className={styles.nrformsub} type="submit" value="Registrar" />
                 </form>
             </div>
         }

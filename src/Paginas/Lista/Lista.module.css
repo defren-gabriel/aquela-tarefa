@@ -1,4 +1,4 @@
-section {
+.section {
     max-width: 500px;
     margin: auto;
 }
@@ -8,7 +8,7 @@ section {
     font-size: 2em;
 }
 
-li {
+.li {
     margin: 5px 0;
     display: flex;
     flex-direction: row;
@@ -22,7 +22,7 @@ li {
     font-size: 1.2em;
 }
 
-li button {
+.lib {
     padding: 10px 15px;
     background-color: #ffffff;
     color: #865D36;
@@ -30,7 +30,7 @@ li button {
     border-radius: 5px;
 }
 
-li button:hover {
+.lib:hover {
     background-color: #865D36;
     color: #ffffff;
     border: 2px solid #865D36;
@@ -50,7 +50,7 @@ li button:hover {
     margin: 15px 0 75px 50px;
 }
 
-.novoregistro form {
+.novoregistrof {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -59,7 +59,7 @@ li button:hover {
     gap: 5px;
 }
 
-.novoregistro form input {
+.novoregistrofi {
     flex-grow: 1;
 }
 
@@ -74,9 +74,13 @@ li button:hover {
     text-align: center;
 }
 
+.label {
+    color: #3E362E;
+}
+
 /*configuração para dispositivos moveis*/
 @media screen and (max-width: 750px){
-    li, .novoregistro form {
+    .li, .novoregistrof {
         margin-right: 5px;
     }
 }
