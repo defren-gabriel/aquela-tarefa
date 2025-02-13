@@ -7,23 +7,23 @@
     align-items: center;
 }
 
-.login form {
+.lform1 {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.login form p {
+.loginfp {
     text-align: center;
     font-size: 1.5em;
 }
 
-.login h1 {
+.ltitulo1 {
     margin-bottom: 25px;
     font-size: 2em;
 }
 
-.email, .senha {
+.email {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -33,20 +33,43 @@
     color: #3E362E;
 }
 
-.botoes-login {
+.senha {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color: #3E362E;
+
+    margin-bottom: 12px;
+}
+
+.botoes_login {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
 }
 
-.botoes-login button, .botoes-login input {
+.botoes_loginb {
     width: 100px;
     padding: 8px 15px;
     text-align: center;
     border: 2px solid #865D36;
     border-radius: 5px;
     color: #3E362E;
+}
+
+.botoes_logini {
+    width: 100px;
+    padding: 8px 15px;
+    text-align: center;
+    border: 2px solid #865D36;
+    border-radius: 5px;
+
+    background-color: #865D36;
+    color: #ffffff !important;
 }
 
 /*area do registro*/
@@ -58,30 +81,30 @@
     align-items: center;
 }
 
-.registro form {
+.rform1 {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.registro form p {
+.registrofp {
     text-align: center;
     font-size: 1.5em;
 }
 
-.registro h1 {
+.rtitulo1 {
     margin-bottom: 25px;
     font-size: 2em;
 }
 
-.botoes-registro {
+.botoes_registro {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
 }
 
-.botoes-registro button, .botoes-registro input {
+.botoes_registrob {
     width: 100px;
     padding: 8px 15px;
     text-align: center;
@@ -90,24 +113,30 @@
     color: #3E362E;
 }
 
-/*botao ativo*/
-.active {
+.botoes_registroi {
+    width: 100px;
+    padding: 8px 15px;
+    text-align: center;
+    border: 2px solid #865D36;
+    border-radius: 5px;
+
     background-color: #865D36;
     color: #ffffff !important;
 }
 
-/*configuração unicas*/
-.senha {
-    margin-bottom: 12px;
+.label {
+    color: #3E362E;
 }
 
-input {
+.input {
     border: 2px solid #865D36;
     padding: 4px 6px;
     border-radius: 5px;
+
+    width: 220px;
+    color: #3E362E;
 }
 
-#email, #senha {
-    width: 220px;
+.error {
     color: #3E362E;
 }
