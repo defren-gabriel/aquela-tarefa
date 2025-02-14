@@ -5,17 +5,16 @@ import { getAuth } from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: import.meta.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: import.meta.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.REACT_APP_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.REACT_APP_FIREBASE_APP_ID,
-  measurementId: import.meta.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
+  apiKey: "AIzaSyBSAFzsBT7WUSIPWAdfp1lAGKxXHBqa3Mc",
+  authDomain: "aquela-tarefa.firebaseapp.com",
+  projectId: "aquela-tarefa",
+  storageBucket: "aquela-tarefa.firebasestorage.app",
+  messagingSenderId: "469550372008",
+  appId: "1:469550372008:web:02e46154c56d0bc9d51e9d",
+  measurementId: "G-RDKG1R6VVR"
 };
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
