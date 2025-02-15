@@ -35,32 +35,9 @@
     align-items: flex-end;
 }
 
-.container1 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-end;
-    gap: 25px;
-}
-
 .container1s {
     font-size: 42px;
     color: #3E362E;
-
-    font-family: "Quattrocento", serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.container1a {
-    text-decoration: none;
-    padding: 5px 15px;
-    border-radius: 5px;
-    border: 2px solid #865D36;
-
-    background-color: #865D36;
-    color: #ffffff !important;
 
     font-family: "Quattrocento", serif;
     font-weight: 500;
